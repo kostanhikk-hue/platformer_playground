@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/dummy_props.gd" id="1_e7lgs"]
+[ext_resource type="PackedScene" path="res://game/level/objects/dummy.tscn" id="2_gy6hf"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_qgyef"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_g1t0r"]
+
+[resource]
+script = ExtResource("3_qgyef")
+id = "dummy"
+title = "Манекен"
+category = "Враги"
+scene = ExtResource("2_gy6hf")
+description = "Враг-манекен: стоит, патрулирует, таранит или ходит по пути."
+props_script = ExtResource("1_e7lgs")
+tags = PackedStringArray("enemy", "path_user")
+kind = "dummy"
+snap_to_floor = true
+editor_color = Color(0.82, 0.3, 0.3, 1)
+editor_size = Vector2(40, 52)

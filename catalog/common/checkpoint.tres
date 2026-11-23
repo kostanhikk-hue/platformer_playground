@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/checkpoint_props.gd" id="1_30ohs"]
+[ext_resource type="PackedScene" path="res://game/level/objects/checkpoint.tscn" id="1_ot1qe"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="2_30ohs"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="3_vhnib"]
+
+[resource]
+script = ExtResource("2_30ohs")
+id = "checkpoint"
+title = "Чекпоинт"
+category = "Интерактив"
+scene = ExtResource("1_ot1qe")
+description = "Точка возрождения: касанием, E или по связи (рисуемая «ладонь»). Лечит и пополняет охру; что сделано до него — не откатывается."
+props_script = ExtResource("1_30ohs")
+tags = PackedStringArray("interactive", "activatable")
+kind = "checkpoint"
+snap_to_floor = true
+editor_color = Color(0.95, 0.6, 0.3, 1)
+editor_size = Vector2(40, 72)

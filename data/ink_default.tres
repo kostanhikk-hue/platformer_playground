@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/ink_params.gd" id="1_2lc80"]
+
+[resource]
+script = ExtResource("1_2lc80")
+draw_time = 0.25
+charge_enabled = true
+charge_move_mult = 0.7
+charge_length_max = 1.5

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://editor/check_loc_view.gd" id="1"]
+
+[node name="CheckLocView" type="Control"]
+script = ExtResource("1")

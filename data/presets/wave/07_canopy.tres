@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/wave_params.gd" id="1_v504i"]
+
+[resource]
+script = ExtResource("1_v504i")
+reach = 220.0
+height = 120.0
+curve_invert = true
+wall_extra = 0.0
+wall_to_ground = false
+aim_mode = 1
+origin_y = 10.0
+snap_to_ground = false

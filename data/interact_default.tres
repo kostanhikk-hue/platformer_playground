@@ -1,0 +1,6 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/interact_params.gd" id="1_ix7sw"]
+
+[resource]
+script = ExtResource("1_ix7sw")

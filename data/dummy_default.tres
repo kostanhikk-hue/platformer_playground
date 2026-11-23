@@ -1,0 +1,7 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/dummy_params.gd" id="1_uib64"]
+
+[resource]
+script = ExtResource("1_uib64")
+respawn_time = 300.0

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/atmosphere_props.gd" id="1_d27jr"]
+[ext_resource type="PackedScene" path="res://game/level/objects/atmosphere.tscn" id="2_myhnf"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_4r7hf"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_sncdf"]
+
+[resource]
+script = ExtResource("3_4r7hf")
+id = "atmosphere"
+title = "Атмосфера"
+category = "Атмосфера"
+scene = ExtResource("2_myhnf")
+description = "Частицы в прямоугольнике: пыль, искры факела, песок, лепестки. Только вид."
+props_script = ExtResource("1_d27jr")
+tags = PackedStringArray()
+kind = "atmosphere"
+editor_color = Color(0.7, 0.9, 1, 0.8)
+editor_size = Vector2(512, 256)
+default_layer = 4

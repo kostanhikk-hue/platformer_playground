@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/dummy_canvas_props.gd" id="1_qw22o"]
+[ext_resource type="PackedScene" path="res://game/level/objects/dummy_canvas.tscn" id="2_404jb"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_k612o"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_8xh25"]
+
+[resource]
+script = ExtResource("3_k612o")
+id = "dummy_canvas"
+title = "Манекен-холст"
+category = "Враги"
+scene = ExtResource("2_404jb")
+description = "Манекен, которого побеждают закрашиванием: 100 % — исчезает. Отмывается, если перестать закрашивать."
+props_script = ExtResource("1_qw22o")
+tags = PackedStringArray("enemy", "paintable", "path_user")
+kind = "dummy"
+snap_to_floor = true
+editor_color = Color(0.9, 0.45, 0.4, 1)
+editor_size = Vector2(40, 52)

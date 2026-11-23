@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="LevelData" format=3]
+
+[ext_resource type="Script" path="res://game/level/background_layer.gd" id="1_abswh"]
+[ext_resource type="Script" path="res://game/level/placed_object.gd" id="2_48ffe"]
+[ext_resource type="Script" path="res://game/level/level_data.gd" id="3_qatq3"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_4lbru"]
+
+[sub_resource type="Resource" id="Resource_abswh"]
+script = ExtResource("1_abswh")
+uid = "bg_1"
+path = "res://art/common/1Cave.jpg"
+position = Vector2(-3679.6414, -238.73462)
+scale = Vector2(2.913165, 2.913165)
+
+[sub_resource type="Resource" id="Resource_48ffe"]
+script = ExtResource("1_abswh")
+uid = "bg_2"
+path = "res://art/common/cave2.jpg"
+position = Vector2(-1904.9819, -261.1537)
+scale = Vector2(2.4537075, 2.4537075)
+z = 1
+
+[sub_resource type="Resource" id="Resource_qatq3"]
+script = ExtResource("1_abswh")
+uid = "bg_3"
+path = "res://art/common/caveart5.jpg"
+position = Vector2(2.371582, -686.687)
+scale = Vector2(1.7610648, 1.7610648)
+z = 2
+
+[sub_resource type="Resource" id="Resource_4lbru"]
+script = ExtResource("1_abswh")
+uid = "bg_4"
+path = "res://art/common/caveart6.jpg"
+position = Vector2(1616.0872, -679.4496)
+scale = Vector2(1.3538787, 1.3538787)
+z = 3
+
+[sub_resource type="Resource" id="Resource_c2mr3"]
+script = ExtResource("1_abswh")
+uid = "bg_5"
+path = "res://art/common/paintings-09.jpg"
+position = Vector2(2614.8118, -644.178)
+scale = Vector2(0.63781554, 0.63781554)
+z = 4
+
+[resource]
+script = ExtResource("3_qatq3")
+bounds = Rect2(-3695.4148, -1517.6724, 6999.3086, 3063.2861)
+backgrounds = Array[ExtResource("1_abswh")]([SubResource("Resource_abswh"), SubResource("Resource_48ffe"), SubResource("Resource_qatq3"), SubResource("Resource_4lbru"), SubResource("Resource_c2mr3")])
+editor_state = {
+"cam": Vector2(-88.43506, 1063.1836),
+"grid_snap": false,
+"layers": [{
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}, {
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}, {
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}, {
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}, {
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}, {
+"alpha": 1.0,
+"locked": false,
+"visible": true
+}],
+"magnet": true,
+"show_collision": true,
+"show_grid": true,
+"show_links": false,
+"zoom": 0.1
+}
+known_errors = PackedStringArray()

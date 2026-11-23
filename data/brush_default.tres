@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/brush_params.gd" id="1_riwbq"]
+
+[resource]
+script = ExtResource("1_riwbq")
+strands = 6
+spread = 1.0
+strand_width = 1.4
+underlay = true
+wobble = 3.0
+wobble_freq = 1.0
+width_var = 0.35
+taper = 0.5
+ragged = 0.12
+color_var = 0.15

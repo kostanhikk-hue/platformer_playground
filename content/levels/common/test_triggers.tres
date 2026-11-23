@@ -1,0 +1,174 @@
+[gd_resource type="Resource" script_class="LevelData" format=3]
+
+[ext_resource type="Script" path="res://game/level/background_layer.gd" id="1_ijxn6"]
+[ext_resource type="Script" path="res://game/level/placed_object.gd" id="2_efd0k"]
+[ext_resource type="Script" path="res://game/level/level_data.gd" id="3_x4o5b"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_58uxe"]
+
+[sub_resource type="Resource" id="Resource_3vbm7"]
+script = ExtResource("2_efd0k")
+uid = "start_1"
+def_id = "start"
+position = Vector2(100, 580)
+layer = 5
+
+[sub_resource type="Resource" id="Resource_rie5x"]
+script = ExtResource("2_efd0k")
+uid = "t_wide"
+def_id = "zone"
+position = Vector2(650, 440)
+layer = 5
+props = {
+"note": "Широкий зал: вход — камера плавно отдаляется до 0.7, выход — возвращается."
+}
+
+[sub_resource type="Resource" id="Resource_bsp7y"]
+script = ExtResource("2_efd0k")
+uid = "p_door"
+def_id = "paintable"
+position = Vector2(1100, 552)
+props = {
+"link_mode": 0,
+"result": 0,
+"targets": PackedStringArray("exit_1")
+}
+
+[sub_resource type="Resource" id="Resource_5xrwv"]
+script = ExtResource("2_efd0k")
+uid = "t_hint"
+def_id = "zone"
+position = Vector2(1150, 490)
+layer = 5
+props = {
+"note": "Подсказка: стоишь 15 с — богиня подсказывает про дверь, ещё 15 с — вторая подсказка."
+}
+
+[sub_resource type="Resource" id="Resource_5ah01"]
+script = ExtResource("2_efd0k")
+uid = "cp_1"
+def_id = "checkpoint"
+position = Vector2(1750, 564)
+
+[sub_resource type="Resource" id="Resource_apmu6"]
+script = ExtResource("2_efd0k")
+uid = "t_take_wave"
+def_id = "zone"
+position = Vector2(2250, 450)
+layer = 5
+props = {
+"note": "Богиня забирает волну и укорачивает линию (пресет short thick). Смерть до следующего чекпоинта — всё возвращается."
+}
+
+[sub_resource type="Resource" id="Resource_l3uox"]
+script = ExtResource("2_efd0k")
+uid = "exit_1"
+def_id = "exit"
+position = Vector2(2900, 552)
+props = {
+"locked": true
+}
+
+[sub_resource type="Resource" id="Resource_vaj2h"]
+script = ExtResource("2_efd0k")
+uid = "m_exit"
+def_id = "marker"
+position = Vector2(2900, 540)
+layer = 5
+props = {
+"note": "Сюда смотрит камера, когда дверь дорисована."
+}
+
+[sub_resource type="Resource" id="Resource_i1qim"]
+script = ExtResource("2_efd0k")
+uid = "note_1"
+def_id = "note"
+position = Vector2(1880, 440)
+layer = 5
+props = {
+"font_size": 13,
+"show_in_game": true,
+"text": "Пропасти — для проверки барков на смерть (с 3-й)"
+}
+
+[sub_resource type="Resource" id="Resource_j3sef"]
+script = ExtResource("4_58uxe")
+uid = "shape_1"
+kind = 3
+points = PackedVector2Array(0, 0, 1900, 0, 1900, 200, 0, 200)
+position = Vector2(0, 600)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_k0ar7"]
+script = ExtResource("4_58uxe")
+uid = "shape_2"
+kind = 3
+points = PackedVector2Array(0, 0, 450, 0, 450, 200, 0, 200)
+position = Vector2(2000, 600)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_60ko0"]
+script = ExtResource("4_58uxe")
+uid = "shape_3"
+kind = 3
+points = PackedVector2Array(0, 0, 650, 0, 650, 200, 0, 200)
+position = Vector2(2550, 600)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_51pxk"]
+script = ExtResource("4_58uxe")
+uid = "shape_4"
+kind = 4
+points = PackedVector2Array(0, 0, 100, 0, 100, 60, 0, 60)
+position = Vector2(1900, 720)
+
+[sub_resource type="Resource" id="Resource_htqg3"]
+script = ExtResource("4_58uxe")
+uid = "shape_5"
+kind = 4
+points = PackedVector2Array(0, 0, 100, 0, 100, 60, 0, 60)
+position = Vector2(2450, 720)
+
+[sub_resource type="Resource" id="Resource_coom8"]
+script = ExtResource("4_58uxe")
+uid = "shape_6"
+points = PackedVector2Array(-250, -160, 250, -160, 250, 160, -250, 160)
+parent_uid = "t_wide"
+color = Color(0.45, 1, 0.65, 1)
+role = "zone"
+
+[sub_resource type="Resource" id="Resource_y634s"]
+script = ExtResource("4_58uxe")
+uid = "shape_7"
+points = PackedVector2Array(-32, 48, -32, -24, -22, -40, 0, -48, 22, -40, 32, -24, 32, 48)
+parent_uid = "p_door"
+color = Color(0.45, 1, 0.65, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_xo5v0"]
+script = ExtResource("4_58uxe")
+uid = "shape_8"
+points = PackedVector2Array(-150, -110, 150, -110, 150, 110, -150, 110)
+parent_uid = "t_hint"
+color = Color(0.45, 1, 0.65, 1)
+role = "zone"
+
+[sub_resource type="Resource" id="Resource_4urhi"]
+script = ExtResource("4_58uxe")
+uid = "shape_9"
+points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+parent_uid = "t_take_wave"
+color = Color(0.45, 1, 0.65, 1)
+role = "zone"
+
+[resource]
+script = ExtResource("3_x4o5b")
+id = "test_triggers"
+title = "Тест: триггеры и реплики"
+bounds = Rect2(0, -200, 3200, 1000)
+kill_y = 900.0
+shapes = Array[ExtResource("4_58uxe")]([SubResource("Resource_j3sef"), SubResource("Resource_k0ar7"), SubResource("Resource_60ko0"), SubResource("Resource_51pxk"), SubResource("Resource_htqg3"), SubResource("Resource_coom8"), SubResource("Resource_y634s"), SubResource("Resource_xo5v0"), SubResource("Resource_4urhi")])
+objects = Array[ExtResource("2_efd0k")]([SubResource("Resource_3vbm7"), SubResource("Resource_rie5x"), SubResource("Resource_bsp7y"), SubResource("Resource_5xrwv"), SubResource("Resource_5ah01"), SubResource("Resource_apmu6"), SubResource("Resource_l3uox"), SubResource("Resource_vaj2h"), SubResource("Resource_i1qim")])
+known_errors = PackedStringArray()

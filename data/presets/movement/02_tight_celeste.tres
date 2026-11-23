@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/movement_params.gd" id="1_x8a8m"]
+
+[resource]
+script = ExtResource("1_x8a8m")
+run_speed = 360.0
+ground_accel = 4500.0
+ground_decel = 5000.0
+turn_mult = 1.5
+air_accel = 3200.0
+air_decel = 1600.0
+ice_friction = 0.08
+jump_height = 120.0
+time_to_apex = 0.34
+fall_mult = 1.6
+cut_mult = 4.0
+apex_threshold = 40.0
+apex_mult = 0.5
+max_fall = 900.0
+coyote_time = 0.1
+jump_buffer = 0.12
+air_jumps = 0
+wall_enabled = true
+wall_slide_speed = 90.0
+wall_jump_x = 300.0
+max_slope_deg = 50.0

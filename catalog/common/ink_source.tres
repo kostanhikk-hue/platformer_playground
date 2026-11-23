@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/ink_source_props.gd" id="1_jvaju"]
+[ext_resource type="PackedScene" path="res://game/level/objects/ink_source.tscn" id="2_rmhra"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_ikpix"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_qj0ho"]
+
+[resource]
+script = ExtResource("3_ikpix")
+id = "ink_source"
+title = "Источник охры"
+category = "Подборы"
+scene = ExtResource("2_rmhra")
+description = "Охра-камень: пополняет запас чернил касанием или E. Однократный или с перезарядкой."
+props_script = ExtResource("1_jvaju")
+tags = PackedStringArray("activatable")
+kind = "ink_source"
+snap_to_floor = true
+editor_color = Color(0.86, 0.48, 0.16, 1)

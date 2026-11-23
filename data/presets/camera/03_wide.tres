@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/camera_params.gd" id="1_evq3r"]
+
+[resource]
+script = ExtResource("1_evq3r")
+offset_x = 0.0
+offset_y = 120.0
+zoom = 0.6

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/light_params.gd" id="1_34e4x"]
+
+[resource]
+script = ExtResource("1_34e4x")

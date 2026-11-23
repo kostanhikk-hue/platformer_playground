@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/ink_params.gd" id="1_cdxo2"]
+
+[resource]
+script = ExtResource("1_cdxo2")
+charge_enabled = true
+charge_time = 0.9
+charge_cost_max = 2.4
+charge_length_min = 0.4
+charge_length_max = 2.0
+charge_damage_max = 3.0
+charge_knock_min = 0.5
+charge_knock_max = 2.2

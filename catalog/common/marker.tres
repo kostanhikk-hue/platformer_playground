@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/marker_props.gd" id="1_tnsiq"]
+[ext_resource type="PackedScene" path="res://game/level/objects/marker.tscn" id="2_ee56l"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_i6185"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_mflpr"]
+
+[resource]
+script = ExtResource("3_i6185")
+id = "marker"
+title = "Метка"
+category = "Служебное"
+scene = ExtResource("2_ee56l")
+description = "Точка для сценария: куда смотрит камера, где появляется враг. Дай id (m_…) и заметку. Быстро — клавиша M."
+props_script = ExtResource("1_tnsiq")
+tags = PackedStringArray()
+kind = "marker"
+uid_prefix = "m"
+editor_color = Color(0.6, 0.85, 1, 1)
+editor_size = Vector2(20, 20)
+default_layer = 5

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/wave_params.gd" id="1_h2i6e"]
+
+[resource]
+script = ExtResource("1_h2i6e")
+curve_power = 1.6
+wall_extra = 0.0
+wall_to_ground = false
+aim_mode = 1
+base_angle = 30.0

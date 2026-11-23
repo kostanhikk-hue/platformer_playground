@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/light_source_props.gd" id="1_sx813"]
+[ext_resource type="PackedScene" path="res://game/level/objects/light_source.tscn" id="2_dmo8y"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_wvdys"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_hr8hj"]
+
+[resource]
+script = ExtResource("3_wvdys")
+id = "torch_wall"
+title = "Факел настенный"
+category = "Свет"
+scene = ExtResource("2_dmo8y")
+description = "Источник света: освещает радиус, оживляет картины и «освещаемые» объекты. Связь зажигает и гасит."
+props_script = ExtResource("1_sx813")
+default_props = {
+"carryable": false,
+"look": 0
+}
+tags = PackedStringArray("light_source", "activatable")
+kind = "light"
+editor_color = Color(1, 0.7, 0.35, 1)
+editor_size = Vector2(24, 40)

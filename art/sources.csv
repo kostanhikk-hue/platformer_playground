@@ -1,0 +1,3 @@
+"asset_id","file","work","original","source_url","author","license","attribution","processing"
+"font_noto_sans","art/fonts/NotoSans-Regular.ttf","Noto Sans Regular (шрифт интерфейса: латиница, кириллица, греческий)","—","https://github.com/notofonts/latin-greek-cyrillic","The Noto Project Authors","SIL Open Font License 1.1 (art/fonts/OFL-NotoSans.txt)","нет (лицензию кладём рядом со шрифтом)","без изменений"
+"font_noto_sans_symbols","art/fonts/NotoSansSymbols-Regular.ttf","Noto Sans Symbols Regular (запасной шрифт: стрелки, значки)","—","https://github.com/notofonts/symbols","The Noto Project Authors","SIL Open Font License 1.1 (art/fonts/OFL-NotoSansSymbols.txt)","нет (лицензию кладём рядом со шрифтом)","без изменений"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/camera_params.gd" id="1_3wqmf"]
+
+[resource]
+script = ExtResource("1_3wqmf")
+offset_x = 160.0
+follow_facing = true
+look_speed = 3.0

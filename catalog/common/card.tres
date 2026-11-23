@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/card_props.gd" id="1_v168w"]
+[ext_resource type="PackedScene" path="res://game/level/objects/card.tscn" id="2_cfb2r"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_42aud"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_fll0b"]
+
+[resource]
+script = ExtResource("3_42aud")
+id = "card"
+title = "Карточка"
+category = "Подборы"
+scene = ExtResource("2_cfb2r")
+description = "Карточка-научпоп из content/dialog/cards.csv: подбор касанием, уведомление в углу."
+props_script = ExtResource("1_v168w")
+tags = PackedStringArray("link_source")
+kind = "card"
+editor_color = Color(0.96, 0.85, 0.6, 1)
+editor_size = Vector2(28, 36)

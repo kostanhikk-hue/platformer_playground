@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/wave_params.gd" id="1_dk5d2"]
+
+[resource]
+script = ExtResource("1_dk5d2")
+charge_time = 1.0
+charge_cost_mode = 1
+charge_drain_rate = 50.0
+charge_knock_max = 1.6

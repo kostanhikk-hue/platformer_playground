@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/plate_props.gd" id="1_qxb25"]
+[ext_resource type="PackedScene" path="res://game/level/objects/plate.tscn" id="2_e4age"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_jpcfl"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_qv3ea"]
+
+[resource]
+script = ExtResource("3_jpcfl")
+id = "plate"
+title = "Нажимная плита"
+category = "Интерактив"
+scene = ExtResource("2_e4age")
+description = "Нажата, пока на ней то, что отмечено галочками: герой, враги, штрихи (линия через плиту), другие тела. Обычно связь «Следовать» на дверь."
+props_script = ExtResource("1_qxb25")
+tags = PackedStringArray("link_source")
+kind = "plate"
+snap_to_floor = true
+editor_color = Color(0.95, 0.75, 0.3, 1)
+editor_size = Vector2(48, 12)

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/movement_params.gd" id="1_qrqie"]
+
+[resource]
+script = ExtResource("1_qrqie")
+run_speed = 300.0
+ground_accel = 1500.0
+ground_decel = 1500.0
+air_accel = 1000.0
+air_decel = 300.0
+jump_height = 220.0
+time_to_apex = 0.65
+fall_mult = 0.9
+cut_mult = 1.5
+apex_mult = 0.4
+max_fall = 450.0

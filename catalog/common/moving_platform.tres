@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/moving_platform_props.gd" id="1_n4rl3"]
+[ext_resource type="PackedScene" path="res://game/level/objects/moving_platform.tscn" id="2_6wvmf"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_i3j0l"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_1o7kb"]
+
+[sub_resource type="Resource" id="Resource_lplcr"]
+script = ExtResource("4_1o7kb")
+kind = 2
+points = PackedVector2Array(-64, 0, 64, 0)
+closed = false
+color = Color(1, 0.85, 0.55, 1)
+role = "form"
+
+[resource]
+script = ExtResource("3_i3j0l")
+id = "moving_platform"
+title = "Движущаяся платформа"
+category = "Платформы"
+scene = ExtResource("2_6wvmf")
+description = "Едет по пути (инструмент «Путь», L) — туда-обратно, по кругу или один раз. Связь запускает и останавливает."
+props_script = ExtResource("1_n4rl3")
+tags = PackedStringArray("activatable", "path_user")
+kind = "moving_platform"
+editor_color = Color(0.55, 0.65, 0.75, 1)
+editor_size = Vector2(128, 16)
+shapes = Array[ExtResource("4_1o7kb")]([SubResource("Resource_lplcr")])

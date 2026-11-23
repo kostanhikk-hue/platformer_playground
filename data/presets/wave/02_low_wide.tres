@@ -1,0 +1,31 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/wave_params.gd" id="1_u3g6e"]
+
+[resource]
+script = ExtResource("1_u3g6e")
+reach = 420.0
+height = 130.0
+curve_power = 2.0
+wall_extra = 0.0
+wall_to_ground = true
+thickness = 12.0
+windup = 0.06
+sweep_time = 0.25
+recovery = 0.25
+cooldown = 0.5
+cast_move_mult = 0.7
+start_gap = 20.0
+snap_to_ground = true
+lifetime = 4.0
+fade_time = 0.8
+max_waves = 2
+ink_cost = 35.0
+one_way = true
+solid_angle_deg = 60.0
+damage = 15.0
+damage_window = 0.35
+knockback_x = 260.0
+knockback_y = 520.0
+hitstop = 0.06
+hit_shake = 5.0

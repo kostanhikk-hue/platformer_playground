@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/note_props.gd" id="1_wksct"]
+[ext_resource type="PackedScene" path="res://game/level/objects/note.tscn" id="2_203pt"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_nxbf3"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_kgofv"]
+
+[resource]
+script = ExtResource("3_nxbf3")
+id = "note"
+title = "Подпись"
+category = "Служебное"
+scene = ExtResource("2_203pt")
+description = "Текст в мире: заметка для себя или подпись в игре."
+props_script = ExtResource("1_wksct")
+tags = PackedStringArray()
+kind = "note"
+editor_color = Color(1, 1, 1, 0.8)
+editor_size = Vector2(96, 24)
+default_layer = 5

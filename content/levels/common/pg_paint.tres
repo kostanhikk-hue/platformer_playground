@@ -1,0 +1,597 @@
+[gd_resource type="Resource" script_class="LevelData" format=3]
+
+[ext_resource type="Script" path="res://game/level/background_layer.gd" id="1_0jewf"]
+[ext_resource type="Script" path="res://game/level/placed_object.gd" id="2_l88ua"]
+[ext_resource type="Script" path="res://game/level/level_data.gd" id="3_p175m"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_3hh7s"]
+
+[sub_resource type="Resource" id="Resource_5nks6"]
+script = ExtResource("2_l88ua")
+uid = "start_1"
+def_id = "start"
+position = Vector2(96, 580)
+layer = 5
+
+[sub_resource type="Resource" id="Resource_utrut"]
+script = ExtResource("2_l88ua")
+uid = "note_1"
+def_id = "note"
+position = Vector2(180, 300)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "1. Три замкнутых контура → тела. Обведи линией (ПКМ / K)."
+}
+
+[sub_resource type="Resource" id="Resource_ag5fj"]
+script = ExtResource("2_l88ua")
+uid = "paintable_1"
+def_id = "paintable"
+position = Vector2(300, 540)
+props = {
+"result": 1
+}
+
+[sub_resource type="Resource" id="Resource_l7dgk"]
+script = ExtResource("2_l88ua")
+uid = "paintable_2"
+def_id = "paintable"
+position = Vector2(520, 490)
+props = {
+"result": 1
+}
+
+[sub_resource type="Resource" id="Resource_xjcsy"]
+script = ExtResource("2_l88ua")
+uid = "paintable_3"
+def_id = "paintable"
+position = Vector2(800, 430)
+props = {
+"result": 1
+}
+
+[sub_resource type="Resource" id="Resource_yn5hg"]
+script = ExtResource("2_l88ua")
+uid = "note_2"
+def_id = "note"
+position = Vector2(1080, 440)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "2. Мост над пропастью: штрихом или держи E у края."
+}
+
+[sub_resource type="Resource" id="Resource_p01tn"]
+script = ExtResource("2_l88ua")
+uid = "paintable_4"
+def_id = "paintable"
+position = Vector2(1220, 596)
+props = {
+"method": 2,
+"result": 2
+}
+
+[sub_resource type="Resource" id="Resource_3lnpj"]
+script = ExtResource("2_l88ua")
+uid = "note_3"
+def_id = "note"
+position = Vector2(1480, 400)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "3. Рисуемая дверь: дорисуй — выход откроется (вернёт в начало)."
+}
+
+[sub_resource type="Resource" id="Resource_885ou"]
+script = ExtResource("2_l88ua")
+uid = "exit_1"
+def_id = "exit"
+position = Vector2(1640, 552)
+props = {
+"locked": true
+}
+
+[sub_resource type="Resource" id="Resource_jgx1q"]
+script = ExtResource("2_l88ua")
+uid = "paintable_5"
+def_id = "paintable"
+position = Vector2(1640, 552)
+props = {
+"link_mode": 0,
+"result": 0,
+"targets": PackedStringArray("exit_1")
+}
+
+[sub_resource type="Resource" id="Resource_quvd2"]
+script = ExtResource("2_l88ua")
+uid = "note_4"
+def_id = "note"
+position = Vector2(1840, 380)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "4. Слева — только удержанием E (тратит охру), справа — только штрихом."
+}
+
+[sub_resource type="Resource" id="Resource_7kj11"]
+script = ExtResource("2_l88ua")
+uid = "paintable_6"
+def_id = "paintable"
+position = Vector2(1960, 510)
+props = {
+"method": 1,
+"result": 2
+}
+
+[sub_resource type="Resource" id="Resource_ygkmo"]
+script = ExtResource("2_l88ua")
+uid = "paintable_7"
+def_id = "paintable"
+position = Vector2(2240, 510)
+props = {
+"method": 0,
+"result": 1
+}
+
+[sub_resource type="Resource" id="Resource_m2fgu"]
+script = ExtResource("2_l88ua")
+uid = "ink_source_1"
+def_id = "ink_source"
+position = Vector2(2100, 584)
+props = {
+"amount": -1.0,
+"recharge": 4.0
+}
+
+[sub_resource type="Resource" id="Resource_d16d5"]
+script = ExtResource("2_l88ua")
+uid = "note_5"
+def_id = "note"
+position = Vector2(2460, 380)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "5. Временная платформа: живёт 6 с."
+}
+
+[sub_resource type="Resource" id="Resource_36gjr"]
+script = ExtResource("2_l88ua")
+uid = "paintable_8"
+def_id = "paintable"
+position = Vector2(2560, 490)
+props = {
+"lifetime": 6.0,
+"method": 2,
+"result": 2
+}
+
+[sub_resource type="Resource" id="Resource_lugx7"]
+script = ExtResource("2_l88ua")
+uid = "note_6"
+def_id = "note"
+position = Vector2(2780, 300)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "6. Закрась стену до 100 % — дверь откроется. Манекен-холст отмывается."
+}
+
+[sub_resource type="Resource" id="Resource_ojiwg"]
+script = ExtResource("2_l88ua")
+uid = "door_1"
+def_id = "door"
+position = Vector2(3060, 552)
+
+[sub_resource type="Resource" id="Resource_5tm5o"]
+script = ExtResource("2_l88ua")
+uid = "coverage_1"
+def_id = "coverage"
+position = Vector2(2880, 490)
+props = {
+"on_full": 2,
+"targets": PackedStringArray("door_1"),
+"thresholds": "25, 50, 100"
+}
+
+[sub_resource type="Resource" id="Resource_har3s"]
+script = ExtResource("2_l88ua")
+uid = "dummy_canvas_1"
+def_id = "dummy_canvas"
+position = Vector2(3260, 574)
+props = {
+"behavior": 1,
+"wash_rate": 5.0
+}
+
+[sub_resource type="Resource" id="Resource_ujckw"]
+script = ExtResource("2_l88ua")
+uid = "note_7"
+def_id = "note"
+position = Vector2(3480, 270)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "7. Свет: возьми факел (E), поднеси к бизону — он оживёт и поедет. Рычаг зажигает настенный факел — дверь освещается."
+}
+
+[sub_resource type="Resource" id="Resource_dvdx1"]
+script = ExtResource("2_l88ua")
+uid = "torch_carry_1"
+def_id = "torch_carry"
+position = Vector2(3560, 580)
+
+[sub_resource type="Resource" id="Resource_vnd6c"]
+script = ExtResource("2_l88ua")
+uid = "living_painting_1"
+def_id = "living_painting"
+position = Vector2(3800, 540)
+layer = 2
+props = {
+"condition": 0,
+"lost": 0,
+"path_uid": "path_1",
+"speed": 100.0
+}
+
+[sub_resource type="Resource" id="Resource_2miv7"]
+script = ExtResource("2_l88ua")
+uid = "torch_wall_1"
+def_id = "torch_wall"
+position = Vector2(4560, 490)
+props = {
+"start_active": false
+}
+
+[sub_resource type="Resource" id="Resource_4tw1e"]
+script = ExtResource("2_l88ua")
+uid = "lever_1"
+def_id = "lever"
+position = Vector2(4480, 584)
+props = {
+"link_mode": 2,
+"targets": PackedStringArray("torch_wall_1")
+}
+
+[sub_resource type="Resource" id="Resource_3qw13"]
+script = ExtResource("2_l88ua")
+uid = "door_2"
+def_id = "door"
+position = Vector2(4680, 552)
+props = {
+"lit_enabled": true,
+"lit_radius": 24.0,
+"open_dir": 2
+}
+
+[sub_resource type="Resource" id="Resource_g28xf"]
+script = ExtResource("2_l88ua")
+uid = "note_8"
+def_id = "note"
+position = Vector2(4800, 400)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "Ладонь: дорисуй — это чекпоинт."
+}
+
+[sub_resource type="Resource" id="Resource_3wkir"]
+script = ExtResource("2_l88ua")
+uid = "checkpoint_1"
+def_id = "checkpoint"
+position = Vector2(4900, 564)
+props = {
+"activation": 2,
+"look": 1
+}
+
+[sub_resource type="Resource" id="Resource_6d6xf"]
+script = ExtResource("2_l88ua")
+uid = "paintable_9"
+def_id = "paintable"
+position = Vector2(4900, 558)
+props = {
+"link_mode": 0,
+"method": 2,
+"result": 0,
+"targets": PackedStringArray("checkpoint_1")
+}
+
+[sub_resource type="Resource" id="Resource_qak0y"]
+script = ExtResource("2_l88ua")
+uid = "note_9"
+def_id = "note"
+position = Vector2(5060, 270)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "8. Рычаг — платформа по кругу. Плита держит дверь открытой. Ломкая. Блок — бей."
+}
+
+[sub_resource type="Resource" id="Resource_ffky0"]
+script = ExtResource("2_l88ua")
+uid = "moving_platform_1"
+def_id = "moving_platform"
+position = Vector2(5300, 480)
+props = {
+"mode": 1,
+"path_uid": "path_2",
+"pause": 0.3,
+"start_active": false
+}
+
+[sub_resource type="Resource" id="Resource_ttmy4"]
+script = ExtResource("2_l88ua")
+uid = "lever_2"
+def_id = "lever"
+position = Vector2(5160, 584)
+props = {
+"link_mode": 3,
+"targets": PackedStringArray("moving_platform_1")
+}
+
+[sub_resource type="Resource" id="Resource_nwx8e"]
+script = ExtResource("2_l88ua")
+uid = "door_3"
+def_id = "door"
+position = Vector2(6000, 552)
+
+[sub_resource type="Resource" id="Resource_6kcyf"]
+script = ExtResource("2_l88ua")
+uid = "plate_1"
+def_id = "plate"
+position = Vector2(5860, 594)
+props = {
+"link_mode": 3,
+"press_bodies": true,
+"press_enemies": true,
+"press_hero": true,
+"press_strokes": true,
+"targets": PackedStringArray("door_3")
+}
+
+[sub_resource type="Resource" id="Resource_xaeev"]
+script = ExtResource("2_l88ua")
+uid = "crumble_1"
+def_id = "crumble"
+position = Vector2(6250, 480)
+
+[sub_resource type="Resource" id="Resource_vbxrt"]
+script = ExtResource("2_l88ua")
+uid = "breakable_1"
+def_id = "breakable"
+position = Vector2(6560, 568)
+props = {
+"hits": 3
+}
+
+[sub_resource type="Resource" id="Resource_4kmk0"]
+script = ExtResource("2_l88ua")
+uid = "card_1"
+def_id = "card"
+position = Vector2(6800, 560)
+props = {
+"card_id": "hand_stencil"
+}
+
+[sub_resource type="Resource" id="Resource_l3yrt"]
+script = ExtResource("2_l88ua")
+uid = "note_10"
+def_id = "note"
+position = Vector2(7000, 240)
+layer = 5
+props = {
+"font_size": 14,
+"show_in_game": true,
+"text": "9. Штрихи — предметы мира. Проведи линию под опускающейся платформой — она встанет на линию; линия исчезла — поедет дальше. Плита в нише нажимается только штрихом: проведи линию в нишу над плитой — дверь откроется, пока линия есть."
+}
+
+[sub_resource type="Resource" id="Resource_prk0r"]
+script = ExtResource("2_l88ua")
+uid = "moving_platform_2"
+def_id = "moving_platform"
+position = Vector2(7250, 320)
+props = {
+"path_uid": "path_3",
+"pause": 0.6,
+"speed": 90.0
+}
+
+[sub_resource type="Resource" id="Resource_0cdj1"]
+script = ExtResource("2_l88ua")
+uid = "door_4"
+def_id = "door"
+position = Vector2(7950, 552)
+
+[sub_resource type="Resource" id="Resource_jd6gq"]
+script = ExtResource("2_l88ua")
+uid = "plate_2"
+def_id = "plate"
+position = Vector2(7680, 594)
+props = {
+"link_mode": 3,
+"press_hero": false,
+"press_strokes": true,
+"targets": PackedStringArray("door_4")
+}
+
+[sub_resource type="Resource" id="Resource_45wcf"]
+script = ExtResource("4_3hh7s")
+uid = "shape_1"
+kind = 3
+points = PackedVector2Array(0, 0, 1060, 0, 1060, 200, 0, 200)
+position = Vector2(0, 600)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_k6f6o"]
+script = ExtResource("4_3hh7s")
+uid = "shape_2"
+kind = 3
+points = PackedVector2Array(0, 0, 7020, 0, 7020, 200, 0, 200)
+position = Vector2(1380, 600)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_7v4f5"]
+script = ExtResource("4_3hh7s")
+uid = "shape_3"
+points = PackedVector2Array(-24, -16, 24, -16, 24, 16, -24, 16)
+parent_uid = "paintable_1"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_cklig"]
+script = ExtResource("4_3hh7s")
+uid = "shape_4"
+points = PackedVector2Array(-48, -24, 48, -24, 48, 24, -48, 24)
+parent_uid = "paintable_2"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_kvit1"]
+script = ExtResource("4_3hh7s")
+uid = "shape_5"
+points = PackedVector2Array(-80, -32, 80, -32, 80, 32, -80, 32)
+parent_uid = "paintable_3"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_75us7"]
+script = ExtResource("4_3hh7s")
+uid = "shape_6"
+kind = 2
+points = PackedVector2Array(-160, 0, -80, 8, 0, 10, 80, 8, 160, 0)
+closed = false
+parent_uid = "paintable_4"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_3q205"]
+script = ExtResource("4_3hh7s")
+uid = "shape_7"
+points = PackedVector2Array(-32, 48, -32, -24, -22, -40, 0, -48, 22, -40, 32, -24, 32, 48)
+parent_uid = "paintable_5"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_a0a3u"]
+script = ExtResource("4_3hh7s")
+uid = "shape_8"
+kind = 2
+points = PackedVector2Array(-80, 0, 80, 0)
+closed = false
+parent_uid = "paintable_6"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_t4smq"]
+script = ExtResource("4_3hh7s")
+uid = "shape_9"
+points = PackedVector2Array(-64, -20, 64, -20, 64, 20, -64, 20)
+parent_uid = "paintable_7"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_8qg3w"]
+script = ExtResource("4_3hh7s")
+uid = "shape_10"
+kind = 2
+points = PackedVector2Array(-90, 0, 90, 0)
+closed = false
+parent_uid = "paintable_8"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_ghinx"]
+script = ExtResource("4_3hh7s")
+uid = "shape_11"
+points = PackedVector2Array(-70, -100, 70, -100, 70, 100, -70, 100)
+parent_uid = "coverage_1"
+color = Color(1, 0.85, 0.55, 1)
+role = "area"
+
+[sub_resource type="Resource" id="Resource_fupt1"]
+script = ExtResource("4_3hh7s")
+uid = "path_1"
+kind = 5
+points = PackedVector2Array(0, 0, 500, 0, 500, -100)
+closed = false
+position = Vector2(3800, 540)
+
+[sub_resource type="Resource" id="Resource_ro0tp"]
+script = ExtResource("4_3hh7s")
+uid = "shape_12"
+points = PackedVector2Array(-14, 24, -16, 2, -26, -12, -21, -17, -11, -6, -12, -30, -5, -32, -2, -10, 1, -36, 8, -35, 7, -9, 12, -31, 18, -29, 14, -5, 22, -19, 27, -15, 16, 10, 14, 24)
+parent_uid = "paintable_9"
+color = Color(1, 0.85, 0.55, 1)
+role = "outline"
+
+[sub_resource type="Resource" id="Resource_vcsnq"]
+script = ExtResource("4_3hh7s")
+uid = "path_2"
+kind = 5
+points = PackedVector2Array(0, 0, 300, 0, 300, -140, 0, -140)
+position = Vector2(5300, 480)
+
+[sub_resource type="Resource" id="Resource_3gv4x"]
+script = ExtResource("4_3hh7s")
+uid = "shape_13"
+kind = 2
+points = PackedVector2Array(-64, 0, 64, 0)
+closed = false
+parent_uid = "crumble_1"
+color = Color(1, 0.85, 0.55, 1)
+role = "form"
+
+[sub_resource type="Resource" id="Resource_ysuok"]
+script = ExtResource("4_3hh7s")
+uid = "shape_14"
+points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+parent_uid = "breakable_1"
+color = Color(1, 0.85, 0.55, 1)
+role = "form"
+
+[sub_resource type="Resource" id="Resource_5kow4"]
+script = ExtResource("4_3hh7s")
+uid = "path_3"
+kind = 5
+points = PackedVector2Array(0, 0, 0, 272)
+closed = false
+position = Vector2(7250, 320)
+
+[sub_resource type="Resource" id="Resource_gpgv4"]
+script = ExtResource("4_3hh7s")
+uid = "shape_15"
+kind = 3
+points = PackedVector2Array(0, 0, 200, 0, 200, 80, 0, 80)
+position = Vector2(7560, 490)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[sub_resource type="Resource" id="Resource_lrn0p"]
+script = ExtResource("4_3hh7s")
+uid = "shape_16"
+kind = 3
+points = PackedVector2Array(0, 0, 30, 0, 30, 110, 0, 110)
+position = Vector2(7760, 490)
+visible_in_game = true
+color = Color(0.3, 0.33, 0.4, 1)
+
+[resource]
+script = ExtResource("3_p175m")
+id = "pg_paint"
+title = "Плейграунд: рисуемые объекты"
+bounds = Rect2(0, -320, 8400, 1120)
+kill_y = 1000.0
+shapes = Array[ExtResource("4_3hh7s")]([SubResource("Resource_45wcf"), SubResource("Resource_k6f6o"), SubResource("Resource_7v4f5"), SubResource("Resource_cklig"), SubResource("Resource_kvit1"), SubResource("Resource_75us7"), SubResource("Resource_3q205"), SubResource("Resource_a0a3u"), SubResource("Resource_t4smq"), SubResource("Resource_8qg3w"), SubResource("Resource_ghinx"), SubResource("Resource_fupt1"), SubResource("Resource_ro0tp"), SubResource("Resource_vcsnq"), SubResource("Resource_3gv4x"), SubResource("Resource_ysuok"), SubResource("Resource_5kow4"), SubResource("Resource_gpgv4"), SubResource("Resource_lrn0p")])
+objects = Array[ExtResource("2_l88ua")]([SubResource("Resource_5nks6"), SubResource("Resource_utrut"), SubResource("Resource_ag5fj"), SubResource("Resource_l7dgk"), SubResource("Resource_xjcsy"), SubResource("Resource_yn5hg"), SubResource("Resource_p01tn"), SubResource("Resource_3lnpj"), SubResource("Resource_885ou"), SubResource("Resource_jgx1q"), SubResource("Resource_quvd2"), SubResource("Resource_7kj11"), SubResource("Resource_ygkmo"), SubResource("Resource_m2fgu"), SubResource("Resource_d16d5"), SubResource("Resource_36gjr"), SubResource("Resource_lugx7"), SubResource("Resource_ojiwg"), SubResource("Resource_5tm5o"), SubResource("Resource_har3s"), SubResource("Resource_ujckw"), SubResource("Resource_dvdx1"), SubResource("Resource_vnd6c"), SubResource("Resource_2miv7"), SubResource("Resource_4tw1e"), SubResource("Resource_3qw13"), SubResource("Resource_g28xf"), SubResource("Resource_3wkir"), SubResource("Resource_6d6xf"), SubResource("Resource_qak0y"), SubResource("Resource_ffky0"), SubResource("Resource_ttmy4"), SubResource("Resource_nwx8e"), SubResource("Resource_6kcyf"), SubResource("Resource_xaeev"), SubResource("Resource_vbxrt"), SubResource("Resource_4kmk0"), SubResource("Resource_l3yrt"), SubResource("Resource_prk0r"), SubResource("Resource_0cdj1"), SubResource("Resource_jd6gq")])
+known_errors = PackedStringArray()

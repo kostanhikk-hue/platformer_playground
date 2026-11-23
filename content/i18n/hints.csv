@@ -1,0 +1,4 @@
+"key","context","ru","en"
+"hint.move","Подсказка на экране в начале первого уровня. {move}, {jump} — текущие клавиши действий (подставляются сами)","{move} — идти, {jump} — прыжок","{move} — walk, {jump} — jump"
+"hint.paint","Подсказка после подбора кисточки (Пещера). {attack} — клавиша удара","Ударом ({attack}) можно красить объекты. Закрашенная ладонь — точка сохранения.","Attack ({attack}) to paint objects. A painted palm is a save point."
+"hint.level_controls","Строка управления внизу экрана уровня. {reset}, {interact}, {back} — клавиши","{reset} — на чекпоинт   |   {interact} — взаимодействие   |   {back} — меню","{reset} — to checkpoint   |   {interact} — interact   |   {back} — menu"

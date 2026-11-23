@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/lever_props.gd" id="1_gmlmw"]
+[ext_resource type="PackedScene" path="res://game/level/objects/lever.tscn" id="2_wmllb"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_8ljg5"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_bsqro"]
+
+[resource]
+script = ExtResource("3_8ljg5")
+id = "lever"
+title = "Рычаг"
+category = "Интерактив"
+scene = ExtResource("2_wmllb")
+description = "E рядом — переключить. Связи: открыть дверь, запустить платформу, зажечь факел…"
+props_script = ExtResource("1_gmlmw")
+tags = PackedStringArray("interactive", "activatable", "link_source")
+kind = "lever"
+snap_to_floor = true
+editor_color = Color(0.95, 0.45, 0.35, 1)
+editor_size = Vector2(40, 32)

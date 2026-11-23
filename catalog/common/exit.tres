@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/exit_props.gd" id="1_oiuaq"]
+[ext_resource type="PackedScene" path="res://game/level/objects/exit.tscn" id="2_anwuh"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_qrqhu"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_oo182"]
+
+[resource]
+script = ExtResource("3_qrqhu")
+id = "exit"
+title = "Выход"
+category = "Служебное"
+scene = ExtResource("2_anwuh")
+description = "Конец уровня. Можно запереть (locked) — откроет связь: рисуемая дверь, рычаг."
+props_script = ExtResource("1_oiuaq")
+tags = PackedStringArray("activatable")
+kind = "exit"
+snap_to_floor = true
+editor_color = Color(0.35, 0.8, 1, 1)
+editor_size = Vector2(64, 96)

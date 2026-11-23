@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/paintable_params.gd" id="1_bc3bl"]
+
+[resource]
+script = ExtResource("1_bc3bl")
+sample_step = 10.0
+auto_close_gap = 56.0
+hold_speed = 420.0
+hold_start_mult = 0.6
+hold_ink_per_px = 0.05

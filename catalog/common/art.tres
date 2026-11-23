@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/objects/art_props.gd" id="1_oekjh"]
+[ext_resource type="PackedScene" path="res://game/level/objects/art_object.tscn" id="2_xetat"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_yxkuw"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_u5bt8"]
+
+[resource]
+script = ExtResource("3_yxkuw")
+id = "art"
+title = "Картинка"
+category = "Арт-объекты"
+scene = ExtResource("2_xetat")
+props_script = ExtResource("1_oekjh")
+tags = PackedStringArray()
+editor_color = Color(0.9, 0.9, 0.9, 1)
+editor_size = Vector2(64, 64)
+transformable = true
+hidden = true

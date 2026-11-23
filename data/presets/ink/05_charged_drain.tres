@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/ink_params.gd" id="1_kkk1u"]
+
+[resource]
+script = ExtResource("1_kkk1u")
+regen_while_charging = false
+charge_enabled = true
+charge_time = 1.2
+auto_release = true
+charge_cost_mode = 1
+charge_drain_rate = 45.0
+charge_length_min = 0.4
+charge_length_max = 2.2
+charge_damage_max = 3.0

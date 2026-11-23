@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/ink_params.gd" id="1_eaeph"]
+
+[resource]
+script = ExtResource("1_eaeph")
+max_ink = 100.0
+cost = 15.0
+regen_rate = 25.0
+regen_delay = 0.8
+length = 140.0
+thickness = 16.0
+draw_time = 0.12
+lifetime = 8.0
+fade_time = 1.0
+cooldown = 0.15
+max_strokes = 5
+start_gap = 24.0
+one_way = true
+snap_degrees = 0.0
+damage = 10.0
+damage_window = 0.3
+knockback_x = 250.0
+knockback_y = 150.0
+hitstop = 0.04

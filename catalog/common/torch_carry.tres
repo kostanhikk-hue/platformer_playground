@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/light_source_props.gd" id="1_x8rhd"]
+[ext_resource type="PackedScene" path="res://game/level/objects/light_source.tscn" id="2_xvk7h"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_23fdm"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_f8bod"]
+
+[resource]
+script = ExtResource("3_23fdm")
+id = "torch_carry"
+title = "Факел переносимый"
+category = "Свет"
+scene = ExtResource("2_xvk7h")
+description = "Свет, который можно взять E и нести (со светом в руках приёмы недоступны). Ещё раз E — положить."
+props_script = ExtResource("1_x8rhd")
+default_props = {
+"carryable": true,
+"look": 1,
+"radius": 220.0
+}
+tags = PackedStringArray("light_source", "activatable", "interactive")
+kind = "light"
+snap_to_floor = true
+editor_color = Color(1, 0.8, 0.4, 1)
+editor_size = Vector2(24, 40)

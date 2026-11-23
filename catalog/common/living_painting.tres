@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/living_painting_props.gd" id="1_2ayjf"]
+[ext_resource type="PackedScene" path="res://game/level/objects/living_painting.tscn" id="2_x0ua5"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_31mmm"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_pjbw3"]
+
+[sub_resource type="Resource" id="Resource_t0bre"]
+script = ExtResource("4_pjbw3")
+points = PackedVector2Array(-80, 10, -70, -20, -40, -38, 0, -40, 30, -34, 55, -28, 70, -12, 80, 4, 72, 16, 60, 14, 56, 30, 46, 30, 44, 16, -40, 16, -44, 30, -54, 30, -56, 14, -74, 18)
+color = Color(1, 0.85, 0.55, 1)
+role = "form"
+
+[resource]
+script = ExtResource("3_31mmm")
+id = "living_painting"
+title = "Ожившая картина"
+category = "Свет"
+scene = ExtResource("2_x0ua5")
+description = "Нарисованный зверь оживает в свете факела (или по связи, или когда дорисован контур): едет по пути — на нём можно ехать — или становится манекеном."
+props_script = ExtResource("1_2ayjf")
+tags = PackedStringArray("activatable", "path_user")
+kind = "living_painting"
+editor_color = Color(0.85, 0.5, 0.25, 1)
+editor_size = Vector2(160, 72)
+default_layer = 2
+shapes = Array[ExtResource("4_pjbw3")]([SubResource("Resource_t0bre")])

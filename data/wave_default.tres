@@ -1,0 +1,23 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/wave_params.gd" id="1_i0ftj"]
+
+[resource]
+script = ExtResource("1_i0ftj")
+reach = 220.0
+height = 140.0
+curve_to = 0.9
+wall_to_ground = false
+thickness = 11.0
+aim_mode = 1
+base_angle = 41.0
+aim_offset = 57.0
+origin_x = 16.0
+origin_y = -91.0
+snap_to_ground = false
+sweep_time = 0.2
+charge_move_mult = 0.7
+charge_reach_min = 0.4
+charge_reach_max = 1.0
+charge_height_max = 1.0
+one_way = false

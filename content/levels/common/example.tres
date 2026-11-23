@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="LevelData" format=3]
+
+[ext_resource type="Script" path="res://game/level/background_layer.gd" id="1_dmkb6"]
+[ext_resource type="Script" path="res://game/level/placed_object.gd" id="2_k7ddw"]
+[ext_resource type="Script" path="res://game/level/level_data.gd" id="3_0j6rx"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_7c5km"]
+
+[sub_resource type="Resource" id="Resource_hu8yu"]
+script = ExtResource("2_k7ddw")
+uid = "start_1"
+def_id = "start"
+position = Vector2(100, 570)
+layer = 5
+
+[sub_resource type="Resource" id="Resource_3ehld"]
+script = ExtResource("2_k7ddw")
+uid = "checkpoint_1"
+def_id = "checkpoint"
+position = Vector2(1800, 564)
+layer = 5
+
+[sub_resource type="Resource" id="Resource_72a1v"]
+script = ExtResource("2_k7ddw")
+uid = "dummy_1"
+def_id = "dummy"
+position = Vector2(1200, 574)
+props = {
+"behavior": 1
+}
+
+[sub_resource type="Resource" id="Resource_1ovfk"]
+script = ExtResource("2_k7ddw")
+uid = "dummy_2"
+def_id = "dummy"
+position = Vector2(2200, 574)
+props = {
+"behavior": 2
+}
+
+[sub_resource type="Resource" id="Resource_71k7q"]
+script = ExtResource("2_k7ddw")
+uid = "exit_1"
+def_id = "exit"
+position = Vector2(3080, 452)
+layer = 5
+
+[sub_resource type="Resource" id="Resource_nb5kp"]
+script = ExtResource("2_k7ddw")
+uid = "note_1"
+def_id = "note"
+position = Vector2(1420, 420)
+layer = 5
+props = {
+"show_in_game": true,
+"text": "яма: смерть → чекпоинт"
+}
+
+[sub_resource type="Resource" id="Resource_a2qo4"]
+script = ExtResource("4_7c5km")
+uid = "shape_1"
+points = PackedVector2Array(0, 600, 900, 600, 1000, 560, 1100, 600, 1400, 600, 1400, 704, 0, 704)
+visible_in_game = true
+color = Color(0.23137255, 0.25882354, 0.32156864, 1)
+
+[sub_resource type="Resource" id="Resource_yekyi"]
+script = ExtResource("4_7c5km")
+uid = "shape_2"
+kind = 1
+points = PackedVector2Array(300, 480, 460, 470, 560, 440)
+closed = false
+visible_in_game = true
+color = Color(0.92156863, 0.79607844, 0.54509807, 1)
+
+[sub_resource type="Resource" id="Resource_qq25j"]
+script = ExtResource("4_7c5km")
+uid = "shape_3"
+kind = 1
+points = PackedVector2Array(620, 380, 780, 380)
+closed = false
+visible_in_game = true
+color = Color(0.92156863, 0.79607844, 0.54509807, 1)
+
+[sub_resource type="Resource" id="Resource_himnx"]
+script = ExtResource("4_7c5km")
+uid = "shape_4"
+kind = 4
+points = PackedVector2Array(1400, 660, 1700, 660, 1700, 704, 1400, 704)
+visible_in_game = true
+color = Color(1, 0.3, 0.3, 0.8)
+
+[sub_resource type="Resource" id="Resource_pc4tb"]
+script = ExtResource("4_7c5km")
+uid = "shape_5"
+points = PackedVector2Array(1700, 600, 2300, 600, 2500, 500, 2700, 500, 2700, 704, 1700, 704)
+visible_in_game = true
+color = Color(0.23137255, 0.25882354, 0.32156864, 1)
+
+[sub_resource type="Resource" id="Resource_1troc"]
+script = ExtResource("4_7c5km")
+uid = "shape_6"
+points = PackedVector2Array(2700, 500, 3200, 500, 3200, 704, 2700, 704)
+material = 1
+visible_in_game = true
+color = Color(0.3529412, 0.6627451, 0.7882353, 1)
+
+[sub_resource type="Resource" id="Resource_d3rgt"]
+script = ExtResource("4_7c5km")
+uid = "shape_7"
+kind = 2
+points = PackedVector2Array(3190, 500, 3190, 0)
+closed = false
+thickness = 20.0
+visible_in_game = true
+color = Color(0.29803923, 0.3372549, 0.41568628, 1)
+
+[sub_resource type="Resource" id="Resource_vtgbg"]
+script = ExtResource("4_7c5km")
+uid = "shape_8"
+kind = 1
+points = PackedVector2Array(1450, 520, 1650, 520)
+closed = false
+visible_in_game = true
+color = Color(0.92156863, 0.79607844, 0.54509807, 1)
+
+[resource]
+script = ExtResource("3_0j6rx")
+id = "example"
+title = "Пример: контуры коллизии"
+bounds = Rect2(0, 0, 3200, 704)
+kill_y = 1004.0
+shapes = Array[ExtResource("4_7c5km")]([SubResource("Resource_a2qo4"), SubResource("Resource_yekyi"), SubResource("Resource_qq25j"), SubResource("Resource_himnx"), SubResource("Resource_pc4tb"), SubResource("Resource_1troc"), SubResource("Resource_d3rgt"), SubResource("Resource_vtgbg")])
+objects = Array[ExtResource("2_k7ddw")]([SubResource("Resource_hu8yu"), SubResource("Resource_3ehld"), SubResource("Resource_72a1v"), SubResource("Resource_1ovfk"), SubResource("Resource_71k7q"), SubResource("Resource_nb5kp")])
+known_errors = PackedStringArray()

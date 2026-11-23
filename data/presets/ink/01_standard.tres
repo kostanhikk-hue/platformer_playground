@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/ink_params.gd" id="1_32pqt"]
+
+[resource]
+script = ExtResource("1_32pqt")
+max_ink = 100.0
+cost = 25.0
+regen_rate = 20.0
+regen_delay = 0.8
+length = 220.0
+thickness = 12.0
+draw_time = 0.12
+lifetime = 5.0
+fade_time = 1.0
+cooldown = 0.15
+max_strokes = 3
+start_gap = 24.0
+one_way = true
+snap_degrees = 0.0
+damage = 10.0
+damage_window = 0.3
+knockback_x = 250.0
+knockback_y = 150.0
+hitstop = 0.04

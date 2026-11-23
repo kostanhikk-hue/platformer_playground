@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/paintable_params.gd" id="1_wfrw3"]
+
+[resource]
+script = ExtResource("1_wfrw3")
+fade_progress = 4.0
+hold_speed = 150.0
+hold_start_mult = 0.15
+hold_ink_per_px = 0.4

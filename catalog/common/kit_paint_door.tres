@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="1_j1jxn"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="2_gujdj"]
+
+[resource]
+script = ExtResource("1_j1jxn")
+id = "kit_paint_door"
+title = "Рисуемая дверь"
+category = "Рисуемое"
+description = "Набор: рисуемый контур двери + запертый выход. Дорисуй дверь — выход откроется."
+tags = PackedStringArray()
+kind = "kit"
+kit = [{
+"def_id": "paintable",
+"key": "door",
+"offset": Vector2(0, 0),
+"props": {
+"link_mode": 0,
+"result": 0,
+"targets": ["@exit"]
+},
+"shapes": [{
+"closed": true,
+"points": PackedVector2Array(-32, 48, -32, -24, -22, -40, 0, -48, 22, -40, 32, -24, 32, 48),
+"role": "outline"
+}]
+}, {
+"def_id": "exit",
+"key": "exit",
+"offset": Vector2(0, 0),
+"props": {
+"locked": true
+}
+}]
+editor_color = Color(1, 0.85, 0.55, 1)
+editor_size = Vector2(96, 96)

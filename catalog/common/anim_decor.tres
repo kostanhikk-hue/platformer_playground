@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" format=3]
+
+[ext_resource type="Script" path="res://game/components/anim_decor_props.gd" id="1_pxjkb"]
+[ext_resource type="PackedScene" path="res://game/level/objects/anim_decor.tscn" id="2_0gqt1"]
+[ext_resource type="Script" path="res://game/level/object_def.gd" id="3_knohb"]
+[ext_resource type="Script" path="res://game/level/geo_shape.gd" id="4_sblj6"]
+
+[resource]
+script = ExtResource("3_knohb")
+id = "anim_decor"
+title = "Анимированный декор"
+category = "Декор"
+scene = ExtResource("2_0gqt1")
+description = "Картинка-лист с сеткой кадров: огонь, вода, флаг… Частота и петля."
+props_script = ExtResource("1_pxjkb")
+tags = PackedStringArray()
+kind = "anim_decor"
+editor_color = Color(0.75, 0.85, 1, 1)
+editor_size = Vector2(64, 64)
+default_layer = 2

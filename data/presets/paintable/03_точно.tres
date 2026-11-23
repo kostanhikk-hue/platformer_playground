@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://data/paintable_params.gd" id="1_w3tgy"]
+
+[resource]
+script = ExtResource("1_w3tgy")
+sample_step = 5.0
+auto_close_gap = 6.0
+hold_speed = 180.0
